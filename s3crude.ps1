@@ -22,7 +22,7 @@ param(
     [switch] $checksum = $false
 )
 
-# Add ability to encode URI/URL
+# Add ability to encode URI/URL.
 Add-Type -AssemblyName System.Web
 
 # Ignore certificate errors for HTTPS if specified (naughty)
