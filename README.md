@@ -6,7 +6,7 @@ PS /home/kevin> $bucketsResponse = ./s3crude.ps1 -ecsHost ecs.cuntos.com -httpOr
 PS /home/kevin> $bucketsResponse.ListAllMyBucketsResult.Buckets.Bucket                                                                  
 
 Name    CreationDate             ServerSideEncryptionEnabled
-----    ------------             ---------------------------
+....    ............             ...........................
 bucket1 2023-11-15T21:51:01.062Z false
 bucket2 2023-11-15T22:01:42.544Z false
 
@@ -37,7 +37,7 @@ PS /home/kevin> $bucketAclResponse = ./s3crude.ps1 -ecsHost ecs.cuntos.com -http
 PS /home/kevin> $bucketAclResponse.AccessControlPolicy.AccessControlList.Grant.Grantee                                                               
 
 xsi                                       type          ID         DisplayName
----                                       ----          --         -----------
+...                                       ....          ..         ...........
 http://www.w3.org/2001/XMLSchema-instance CanonicalUser objectuser objectuser
 
 PS /home/kevin> $bucketAclResponse.AccessControlPolicy.AccessControlList.Grant.Permission
@@ -50,7 +50,7 @@ PS /home/kevin> $objectAclResponse = ./s3crude.ps1 -ecsHost ecs.cuntos.com -http
 PS /home/kevin> $objectAclResponse.AccessControlPolicy.AccessControlList.Grant.Grantee                                                                        
 
 xsi                                       type          ID         DisplayName
----                                       ----          --         -----------
+...                                       ....          ..         ...........
 http://www.w3.org/2001/XMLSchema-instance CanonicalUser objectuser objectuser
 
 PS /home/kevin> $objectAclResponse.AccessControlPolicy.AccessControlList.Grant.Permission
