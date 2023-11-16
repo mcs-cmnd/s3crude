@@ -1,3 +1,4 @@
+<pre>
 # s3crude
 
 List buckets in a namespace
@@ -68,3 +69,5 @@ Download an object from a bucket
 ===================================
 PS /home/kevin> ./s3crude.ps1 -ecsHost ecs.cuntos.com -httpOrHttps https -ecsPort 9021 -requestUri /bucket2/testfile -requestType GET -downloadFile testfile    
 PS /home/kevin>
+
+</pre>
